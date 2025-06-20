@@ -63,7 +63,7 @@
       </a-marker>
 
       <!-- === Marker Nabi Isa === -->
-      <a-marker type="pattern" url="pattern-create.patt" id="isa-marker">
+      <a-marker type="pattern" url="NabiIsa.patt" id="isa-marker">
         <a-entity id="isa-model" gltf-model="url(nabi_isa.glb)" scale="0.6 0.6 0.6" position="0 -1.2 -1.2" rotation="0 180 0" visible="false"></a-entity>
 
         <!-- Cards Nabi Isa -->
@@ -84,16 +84,40 @@
         </a-entity>
 
         <a-entity id="isa-story-card" visible="false">
-          <a-plane position="0 -0.6 0.6" width="2" height="1.4" color="#333333" opacity="0"
-            animation="property: opacity; to: 0.9; dur: 1000; startEvents: show-story"></a-plane>
-          <a-text value="Kisah Nabi Isa" align="center" color="#ffffff"
-            position="0 -0.3 0.61" width="2.5" opacity="0"
-            animation="property: opacity; to: 1; dur: 1500; startEvents: show-story"></a-text>
-          <a-text value="5 Mukjizat Nabi Isa a.s.:\n1. Diciptakan tanpa ayah..."
-            align="center" color="#ffffff" position="0 -0.7 0.61" width="2" wrap-count="30"
-            opacity="0" scale="0.3 0.3 0.3"
-            animation="property: opacity; to: 1; dur: 2000; startEvents: show-story; delay: 500"></a-text>
+          <a-plane
+            position="0 0.4 0.6"
+            width="1.8"
+            height="1.2"
+            color="#333333"
+            opacity="0"
+            animation="property: opacity; to: 0.9; dur: 1000; startEvents: show-story"
+          >
+          </a-plane>
+          <a-text
+            value="Kisah Nabi Isa"
+            align="center"
+            color="#ffffff"
+            position="0 0.9 0.61"
+            width="2.5"
+            opacity="0"
+            animation="property: opacity; to: 1; dur: 1500; startEvents: show-story"
+          >
+          </a-text>
+          <a-text
+            value="5 Mukjizat Nabi Isa a.s.:\n\n1. Diciptakan tanpa ayah\n2. Bicara sejak bayi\n3. Membentuk burung dari tanah\n4. Menyembuhkan penyakit\n5. Menghidupkan orang mati"
+            align="center"
+            color="#ffffff"
+            position="0 0.4 0.61"
+            width="2"
+            opacity="0"
+            wrap-count="30"
+            scale="0.7 0.7 0.7"
+            animation="property: opacity; to: 1; dur: 2000; startEvents: show-story; delay: 500"
+          >
+          </a-text>
         </a-entity>
+
+
       </a-marker>
 
       <!-- Assets -->
