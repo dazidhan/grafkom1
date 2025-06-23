@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>AR Kisah Nabi-Nabi</title>
+    <title>AR Kisah Nabi Ulul Azmi</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <style>
@@ -116,14 +116,284 @@
           >
           </a-text>
         </a-entity>
+      </a-marker>
 
+      <!-- === Marker Nabi Muhammad === -->
+      <a-marker type="pattern" url="pattern-al_quran.patt" id="muhammad-marker">
+        <a-entity
+          id="muhammad-model"
+          gltf-model="url(al_quran.glb)"
+          scale="1 1 1"
+          position="0 0 -0.5"
+          visible="false">
+        </a-entity>
 
+        <!-- Cards Nabi Muhammad -->
+        <a-entity id="muhammad-first-card" visible="false">
+          <a-plane
+            position="0 0.4 0.6"
+            width="1.2"
+            height="0.4"
+            color="#ff0000"
+            opacity="0"
+            animation="property: opacity; to: 0.9; dur: 1000; startEvents: fade-in"
+          >
+          </a-plane>
+          <a-text
+            value="Nabi Muhammad SAW \nSalah satu Nabi Ulul Azmi"
+            align="center"
+            color="#ffffff"
+            position="0 0.4 0.61"
+            scale="0.4 0.4 0.4"
+            opacity="0"
+            animation="property: opacity; to: 1; dur: 1500; startEvents: fade-in"
+          >
+          </a-text>
+        </a-entity>
+
+        <a-entity id="muhammad-second-card" visible="false">
+          <a-plane
+            position="0 0.4 0.6"
+            width="1.2"
+            height="0.4"
+            color="#ff0000"
+            opacity="0"
+            animation="property: opacity; to: 0.9; dur: 1000; startEvents: show-second"
+          >
+          </a-plane>
+          <a-text
+            value="Gambar hanya ilustrasi"
+            align="center"
+            color="#ffffff"
+            position="0 0.4 0.61"
+            scale="0.4 0.4 0.4"
+            opacity="0"
+            animation="property: opacity; to: 1; dur: 1500; startEvents: show-second"
+          >
+          </a-text>
+        </a-entity>
+
+        <a-entity id="muhammad-story-card" visible="false">
+          <a-plane
+            position="0 0.4 0.6"
+            width="1.8"
+            height="1.2"
+            color="#333333"
+            opacity="0"
+            animation="property: opacity; to: 0.9; dur: 1000; startEvents: show-story"
+          >
+          </a-plane>
+          <a-text
+            value="Kisah Nabi Muhammad SAW"
+            align="center"
+            color="#ffffff"
+            position="0 0.9 0.61"
+            width="2.5"
+            opacity="0"
+            animation="property: opacity; to: 1; dur: 1500; startEvents: show-story"
+          >
+          </a-text>
+          <a-text
+            value="Al-Quran diturunkan kepada Nabi Muhammad secara bertahap selama kurang lebih 23 tahun melalui perantara Malaikat Jibril."
+            align="center"
+            color="#ffffff"
+            position="0 0.4 0.61"
+            width="2"
+            opacity="0"
+            wrap-count="50"
+            scale="0.8 0.8 0.8"
+            animation="property: opacity; to: 1; dur: 2000; startEvents: show-story; delay: 500"
+          >
+          </a-text>
+        </a-entity>
+      </a-marker>
+
+      <!-- === Marker Nabi Musa === -->
+      <a-marker type="pattern" url="pattern-Musa.patt" id="musa-marker">
+        <a-entity
+          id="musa-model"
+          gltf-model="url(Tongkat.glb)"
+          scale="0.015 0.015 0.016"
+          position="0 -1.5 -1"
+          visible="false">
+        </a-entity>
+
+        <!-- Cards Nabi Musa -->
+        <a-entity id="musa-first-card" visible="false">
+          <a-plane
+            position="0 0.4 0.6"
+            width="1.2"
+            height="0.4"
+            color="#ff0000"
+            opacity="0"
+            animation="property: opacity; to: 0.9; dur: 1000; startEvents: fade-in"
+          >
+          </a-plane>
+          <a-text
+            value="Nabi Musa a.s.\nSalah satu Nabi Ulul Azmi"
+            align="center"
+            color="#ffffff"
+            position="0 0.4 0.61"
+            scale="0.4 0.4 0.4"
+            opacity="0"
+            animation="property: opacity; to: 1; dur: 1500; startEvents: fade-in"
+          >
+          </a-text>
+        </a-entity>
+
+        <a-entity id="musa-second-card" visible="false">
+          <a-plane
+            position="0 0.4 0.6"
+            width="1.2"
+            height="0.4"
+            color="#ff0000"
+            opacity="0"
+            animation="property: opacity; to: 0.9; dur: 1000; startEvents: show-second"
+          >
+          </a-plane>
+          <a-text
+            value="Gambar hanya ilustrasi"
+            align="center"
+            color="#ffffff"
+            position="0 0.4 0.61"
+            scale="0.4 0.4 0.4"
+            opacity="0"
+            animation="property: opacity; to: 1; dur: 1500; startEvents: show-second"
+          >
+          </a-text>
+        </a-entity>
+
+        <a-entity id="musa-story-card" visible="false">
+          <a-plane
+            position="0 0.4 0.6"
+            width="1.8"
+            height="1.2"
+            color="#333333"
+            opacity="0"
+            animation="property: opacity; to: 0.9; dur: 1000; startEvents: show-story"
+          >
+          </a-plane>
+          <a-text
+            value="Kisah Nabi Musa"
+            align="center"
+            color="#ffffff"
+            position="0 0.9 0.61"
+            width="2.5"
+            opacity="0"
+            animation="property: opacity; to: 1; dur: 1500; startEvents: show-story"
+          >
+          </a-text>
+          <a-text
+            value="Nabi Musa lahir di Mesir saat pemerintahan Fir'aun yang zalim, yang memerintahkan pembunuhan bayi laki-laki Bani Israil. Dilempar ke Sungai Nil namun diselamatkan oleh istri Fir'aun, Musa dibesarkan di istana. Saat dewasa, ia membunuh seorang penjaga Mesir dan melarikan diri ke Madyan, menikahi putri Nabi Syuaib. Allah memanggilnya di Gunung Thur, memberikan mukjizat seperti tongkat yang berubah menjadi ular besar dan membelah Laut Merah. Musa membawa Bani Israil keluar dari Mesir, menerima Taurat di Gunung Sinai, tetapi mereka membuat patung anak sapi. Meski tidak memasuki Tanah Suci, Musa membimbing mereka hingga akhir hayatnya"
+            align="center"
+            color="#ffffff"
+            position="0 0.4 0.61"
+            width="2"
+            opacity="0"
+            wrap-count="50"
+            scale="0.8 0.8 0.8"
+            animation="property: opacity; to: 1; dur: 2000; startEvents: show-story; delay: 500">
+          </a-text>
+        </a-entity>
+      </a-marker>
+
+      <!-- === Marker Nabi Ibrahim === -->
+      <a-marker type="pattern" url="pattern-api.patt" id="ibrahim-marker">
+        <a-entity
+          id="ibrahim-model"
+          gltf-model="url(paper_fire.glb)"
+          scale="1 1 1"
+          position="0 0 -0.5"
+          visible="false">
+        </a-entity>
+
+        <!-- Cards Nabi Ibrahim -->
+        <a-entity id="ibrahim-first-card" visible="false">
+          <a-plane
+            position="0 0.4 0.6"
+            width="1.2"
+            height="0.4"
+            color="#ff0000"
+            opacity="0"
+            animation="property: opacity; to: 0.9; dur: 1000; startEvents: fade-in"
+          >
+          </a-plane>
+          <a-text
+            value="Nabi Ibrahim a.s.\nSalah satu Nabi Ulul Azmi"
+            align="center"
+            color="#ffffff"
+            position="0 0.4 0.61"
+            scale="0.4 0.4 0.4"
+            opacity="0"
+            animation="property: opacity; to: 1; dur: 1500; startEvents: fade-in"
+          >
+          </a-text>
+        </a-entity>
+
+        <a-entity id="ibrahim-second-card" visible="false">
+          <a-plane
+            position="0 0.4 0.6"
+            width="1.2"
+            height="0.4"
+            color="#ff0000"
+            opacity="0"
+            animation="property: opacity; to: 0.9; dur: 1000; startEvents: show-second"
+          >
+          </a-plane>
+          <a-text
+            value="Gambar hanya ilustrasi"
+            align="center"
+            color="#ffffff"
+            position="0 0.4 0.61"
+            scale="0.4 0.4 0.4"
+            opacity="0"
+            animation="property: opacity; to: 1; dur: 1500; startEvents: show-second"
+          >
+          </a-text>
+        </a-entity>
+
+        <a-entity id="ibrahim-story-card" visible="false">
+          <a-plane
+            position="0 0.4 0.6"
+            width="1.8"
+            height="1.2"
+            color="#333333"
+            opacity="0"
+            animation="property: opacity; to: 0.9; dur: 1000; startEvents: show-story"
+          >
+          </a-plane>
+          <a-text
+            value="Kisah Nabi Ibrahim"
+            align="center"
+            color="#ffffff"
+            position="0 0.9 0.61"
+            width="2.5"
+            opacity="0"
+            animation="property: opacity; to: 1; dur: 1500; startEvents: show-story"
+          >
+          </a-text>
+          <a-text
+            value="Salah satu Nabi Ulul Azmi. Lahir di Babilonia, Irak. Masyarakat saat itu menyembah berhala. Ayahnya Azar adalah pembuat patung. Ibrahim sejak kecil kritis. Ia menolak menyembah benda langit dan berhala. Ia menghancurkan berhala kaumnya, menyisakan satu patung besar. Ketika ditanya, ia menjawab patung besar itulah pelakunya. Raja Namrud memerintahkan Ibrahim dibakar. Namun api menjadi dingin atas izin Allah, dan Ibrahim selamat. Ia juga diuji untuk menyembelih putranya, Ismail. Allah menggantinya dengan domba. Ini asal ibadah kurban. Ia dan Ismail membangun Ka'bah di Mekah. Dikenal sebagai bapak para nabi: Ishaq, Musa, Isa, Muhammad. Wafat dalam usia tua, penuh ujian dan ketaatan"
+            align="center"
+            color="#ffffff"
+            position="0 0.4 0.61"
+            width="2"
+            opacity="0"
+            wrap-count="50"
+            scale="0.8 0.8 0.8"
+            animation="property: opacity; to: 1; dur: 2000; startEvents: show-story; delay: 500"
+          >
+          </a-text>
+        </a-entity>
       </a-marker>
 
       <!-- Assets -->
       <a-assets>
         <audio id="narasi-nuh" src="KisahNabiNuh.mp3" preload="auto"></audio>
         <audio id="narasi-isa" src="nabi_isa.mp3" preload="auto"></audio>
+        <audio id="narasi-muhammad" src="KisahNabiMuhammad.mp3" preload="auto"></audio>
+        <audio id="narasi-musa" src="NarasiNabiMusa.mp3" preload="auto"></audio>
+        <audio id="narasi-ibrahim" src="KisahNabiIbrahim.mpeg" preload="auto"></audio>
       </a-assets>
 
       <a-entity camera></a-entity>
@@ -131,6 +401,9 @@
 
     <button id="play-nuh" class="playButton">Putar Narasi Nabi Nuh</button>
     <button id="play-isa" class="playButton">Putar Narasi Nabi Isa</button>
+    <button id="play-muhammad" class="playButton">Putar Narasi Nabi Muhammad</button>
+    <button id="play-musa" class="playButton">Putar Narasi Nabi Musa</button>
+    <button id="play-ibrahim" class="playButton">Putar Narasi Nabi Ibrahim</button>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -230,6 +503,144 @@
           });
           playIsaBtn.style.display = "none";
           audioIsa.pause(); audioIsa.currentTime = 0;
+          resetVisibility();
+        });
+
+        // === Marker Nabi Muhammad ===
+        const muhammadMarker = document.getElementById("muhammad-marker");
+        const playMuhammadBtn = document.getElementById("play-muhammad");
+        const audioMuhammad = document.getElementById("narasi-muhammad");
+
+        muhammadMarker.addEventListener("markerFound", () => {
+          document.getElementById("muhammad-model").setAttribute("visible", "true");
+          const first = document.getElementById("muhammad-first-card");
+          const second = document.getElementById("muhammad-second-card");
+          const story = document.getElementById("muhammad-story-card");
+
+          first.setAttribute("visible", true);
+          first.querySelector("a-plane").emit("fade-in");
+          first.querySelector("a-text").emit("fade-in");
+
+          setTimeout(() => {
+            first.setAttribute("visible", false);
+            second.setAttribute("visible", true);
+            second.querySelector("a-plane").emit("show-second");
+            second.querySelector("a-text").emit("show-second");
+
+            setTimeout(() => {
+              second.setAttribute("visible", false);
+              story.setAttribute("visible", true);
+              story.querySelector("a-plane").emit("show-story");
+              story.querySelectorAll("a-text").forEach(el => el.emit("show-story"));
+
+              playMuhammadBtn.style.display = "block";
+              playMuhammadBtn.onclick = () => {
+                audioMuhammad.play();
+                playMuhammadBtn.style.display = "none";
+              };
+              audioMuhammad.play().catch(() => {});
+            }, 3000);
+          }, 3000);
+        });
+
+        muhammadMarker.addEventListener("markerLost", () => {
+          ["muhammad-model", "muhammad-first-card", "muhammad-second-card", "muhammad-story-card"].forEach(id => {
+            document.getElementById(id).setAttribute("visible", false);
+          });
+          playMuhammadBtn.style.display = "none";
+          audioMuhammad.pause(); audioMuhammad.currentTime = 0;
+          resetVisibility();
+        });
+
+        // === Marker Nabi Musa ===
+        const musaMarker = document.getElementById("musa-marker");
+        const playMusaBtn = document.getElementById("play-musa");
+        const audioMusa = document.getElementById("narasi-musa");
+
+        musaMarker.addEventListener("markerFound", () => {
+          document.getElementById("musa-model").setAttribute("visible", "true");
+          const first = document.getElementById("musa-first-card");
+          const second = document.getElementById("musa-second-card");
+          const story = document.getElementById("musa-story-card");
+
+          first.setAttribute("visible", true);
+          first.querySelector("a-plane").emit("fade-in");
+          first.querySelector("a-text").emit("fade-in");
+
+          setTimeout(() => {
+            first.setAttribute("visible", false);
+            second.setAttribute("visible", true);
+            second.querySelector("a-plane").emit("show-second");
+            second.querySelector("a-text").emit("show-second");
+
+            setTimeout(() => {
+              second.setAttribute("visible", false);
+              story.setAttribute("visible", true);
+              story.querySelector("a-plane").emit("show-story");
+              story.querySelectorAll("a-text").forEach(el => el.emit("show-story"));
+
+              playMusaBtn.style.display = "block";
+              playMusaBtn.onclick = () => {
+                audioMusa.play();
+                playMusaBtn.style.display = "none";
+              };
+              audioMusa.play().catch(() => {});
+            }, 3000);
+          }, 3000);
+        });
+
+        musaMarker.addEventListener("markerLost", () => {
+          ["musa-model", "musa-first-card", "musa-second-card", "musa-story-card"].forEach(id => {
+            document.getElementById(id).setAttribute("visible", false);
+          });
+          playMusaBtn.style.display = "none";
+          audioMusa.pause(); audioMusa.currentTime = 0;
+          resetVisibility();
+        });
+
+        // === Marker Nabi Ibrahim ===
+        const ibrahimMarker = document.getElementById("ibrahim-marker");
+        const playIbrahimBtn = document.getElementById("play-ibrahim");
+        const audioIbrahim = document.getElementById("narasi-ibrahim");
+
+        ibrahimMarker.addEventListener("markerFound", () => {
+          document.getElementById("ibrahim-model").setAttribute("visible", "true");
+          const first = document.getElementById("ibrahim-first-card");
+          const second = document.getElementById("ibrahim-second-card");
+          const story = document.getElementById("ibrahim-story-card");
+
+          first.setAttribute("visible", true);
+          first.querySelector("a-plane").emit("fade-in");
+          first.querySelector("a-text").emit("fade-in");
+
+          setTimeout(() => {
+            first.setAttribute("visible", false);
+            second.setAttribute("visible", true);
+            second.querySelector("a-plane").emit("show-second");
+            second.querySelector("a-text").emit("show-second");
+
+            setTimeout(() => {
+              second.setAttribute("visible", false);
+              story.setAttribute("visible", true);
+              story.querySelector("a-plane").emit("show-story");
+              story.querySelectorAll("a-text").forEach(el => el.emit("show-story"));
+
+              playIbrahimBtn.style.display = "block";
+              playIbrahimBtn.onclick = () => {
+                audioIbrahim.play();
+                playIbrahimBtn.style.display = "none";
+              };
+              audioIbrahim.play().catch(() => {});
+            }, 3000);
+          }, 3000);
+        });
+
+        ibrahimMarker.addEventListener("markerLost", () => {
+          ["ibrahim-model", "ibrahim-first-card", "ibrahim-second-card", "ibrahim-story-card"].forEach(id => {
+            document.getElementById(id).setAttribute("visible", false);
+          });
+          playIbrahimBtn.style.display = "none";
+          audioIbrahim.pause(); audioIbrahim.currentTime = 0;
           resetVisibility();
         });
       });
